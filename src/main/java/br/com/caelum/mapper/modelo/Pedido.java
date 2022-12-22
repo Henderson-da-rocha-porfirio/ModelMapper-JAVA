@@ -3,7 +3,7 @@ package br.com.caelum.mapper.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Vamos dar um exemplo mais concreto. Parte do nosso domain model poderia representar um Pedido que se relaciona com outras classes como Endereco, Produto e Cliente: */
+/* Exemplo mais concreto. Parte do nosso domain model poderia representar um Pedido que se relaciona com outras classes como Endereco, Produto e Cliente: */
 
 public class Pedido {
 	
