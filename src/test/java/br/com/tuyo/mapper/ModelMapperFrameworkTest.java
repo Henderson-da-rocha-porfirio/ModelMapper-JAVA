@@ -16,6 +16,30 @@ import br.com.caelum.mapper.modelo.Pedido;
 import br.com.caelum.mapper.modelo.PedidoFlat;
 import br.com.caelum.mapper.modelo.Produto;
 
+/*
+*
+*
+* O uso do ModelMapper é simples bastando instanciá-lo para em seguida chamar seu método map(..) que popula o DTO
+* e recebe o objeto fonte e o tipo do DTO:
+* Ex: Pedido pedido = pegaPedido();
+* 	  ModelMapper mapper = new ModelMapper();
+*     PedidoDto dto = mapper.map(pedido, PedidoDto.class) //Foi populado
+* O ModelMapper é inteligente o suficiente para encontrar o caminho no domínio e chama os getter desde
+* que existam essas informações no DTO. Quando não há como deduzir o caminho correto, é preciso configurá-lo
+* programaticamente. Por exemplo, para pegar o nome do cliente é necessário chamar:
+* String nome = pedido.getCliente().getNome().getSobreNome(); peditoDto.setCliente(nome);
+* Nesse caso o ModelMapper precisa de uma dica pois não tem como deduzir esta chamada. Para tal, existe o PropertyMap
+* que configura programaticamente o mapeamento entre a fonte (source()) e o destino (map()) :
+*
+* mapper.addMappings(new PropertyMap<Pedido, PedidoDto>() {
+
+			@Override
+			protected void configure() {
+				map().setCliente(source.getCliente().getNome().getPrimeiroNome());
+			}
+		});
+*
+*/
 
 public class ModelMapperFrameworkTest {
 	

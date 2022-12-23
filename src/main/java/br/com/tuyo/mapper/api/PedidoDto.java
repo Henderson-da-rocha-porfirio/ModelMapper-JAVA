@@ -2,6 +2,14 @@ package br.com.caelum.mapper;
 
 import java.util.List;
 
+/*
+*
+*
+* PedidoDto possui, na sua maioria, apenas atributos simples:
+* Verificar o ModelMapperFrameworkTest.
+*
+*
+*/
 public class PedidoDto {
 	
 	private String cliente;

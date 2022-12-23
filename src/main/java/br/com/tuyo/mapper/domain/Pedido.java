@@ -3,7 +3,15 @@ package br.com.caelum.mapper.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Exemplo mais concreto. Parte do nosso domain model poderia representar um Pedido que se relaciona com outras classes como Endereco, Produto e Cliente: */
+/*
+*
+* 1. Exemplo mais concreto. Parte do nosso domain model poderia representar um Pedido que se
+ relaciona com outras classes como Endereco, Produto e Cliente
+* 2. A tarefa do ModelMapper é mapear isso para o DTO que normalmente está
+* mais achatado (flat). Procurar PedidoDTO.
+*
+*/
+
 
 public class Pedido {
 	

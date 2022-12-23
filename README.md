@@ -6,7 +6,9 @@
 > - O problema agora é que precisamos popular esses objetos, já que criamos uma hierarquia paralela ao nosso domínio, algo que pode ser bastante trabalhoso. O ideal é delegar o trabalho para um framework. Com tempo sugiram algumas opções que se preocupam com o mapeamento de objeto para objeto (Object-to-Object Mapper). Exemplos disso, são Apache [Dozer](http://dozer.sourceforge.net/), [Orika](https://github.com/orika-mapper/orika/), [Automapper](http://automapper.org/) e entre vários outros. Um framework que se destaca no mercado é o [ModelMapper](http://modelmapper.org/). Com ele é possível mapear modelos complexos, com nenhuma ou poucas configurações - sempre seguindo convenções.
 
 
-## Verificar os domains e dtos que terão mais detalhes
+## É importante mencionar que um [Object-to-Object Mapper](http://www.javacodegeeks.com/2013/10/java-object-to-object-mapper.html) não só serve para mapear o domínio para um DTO. Há várias outras [motivações](http://dozer.sourceforge.net/documentation/whymap.html) para uma hiearquia paralela. De qualquer forma um object-to-object mapper assume esse parte trabalhosa de copiar os valores entre objetos.
+
+## Verificar os domains(comece por pedido) e dtos que terão mais detalhes
 
 ## Simples testes usando object-to-object mapper: 
 
