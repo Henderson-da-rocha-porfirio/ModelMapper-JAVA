@@ -29,7 +29,8 @@ import br.com.caelum.mapper.modelo.Produto;
 * O ModelMapper é inteligente o suficiente para encontrar o caminho no domínio e chama os getter desde
 * que existam essas informações no DTO. Quando não há como deduzir o caminho correto, é preciso configurá-lo
 * programaticamente. Por exemplo, para pegar o nome do cliente é necessário chamar:
-* String nome = pedido.getCliente().getNome().getSobreNome(); peditoDto.setCliente(nome);
+* String nome = pedido.getCliente().getNome().getSobreNome(); 
+* peditoDto.setCliente(nome);
 * Nesse caso o ModelMapper precisa de uma dica pois não tem como deduzir esta chamada. Para tal, existe o PropertyMap
 * que configura programaticamente o mapeamento entre a fonte (source()) e o destino (map()) :
 *
