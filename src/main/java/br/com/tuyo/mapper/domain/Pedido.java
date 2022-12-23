@@ -1,4 +1,4 @@
-package br.com.caelum.mapper.modelo;
+package br.com.tuyo.mapper.modelo;
 
 import java.util.ArrayList;
 import java.util.List;

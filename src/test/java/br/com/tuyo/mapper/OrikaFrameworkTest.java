@@ -1,4 +1,4 @@
-package br.com.caelumm.mapper;
+package br.com.tuyo.mapper;
 
 import junit.framework.Assert;
 import ma.glasnost.orika.MapperFacade;

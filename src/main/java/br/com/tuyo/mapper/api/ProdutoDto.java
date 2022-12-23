@@ -1,4 +1,4 @@
-package br.com.caelum.mapper;
+package br.com.tuyo.mapper.api;
 
 public class ProdutoDto {
 	
